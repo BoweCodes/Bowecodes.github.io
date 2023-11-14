@@ -12,8 +12,9 @@
       height:100px;
       background-color:green;
       position:absolute;
-      left:0px;
-      right:0px;
+
+
+
     }
   </style>
 </head>
@@ -22,30 +23,79 @@
   <div id="snake"></div>
 
   <script type="text/javascript">
-      
-    var snake = document.getElementById("snake");
+  
+  var direct=1    
+  var snake = document.getElementById("snake");
+  
   var left = 0;
-  snake.style.left = left;
+  var up = 0;
+
+  function goRight (){
+    left = left + 10;
+    snake.style.left = left + "px";
+
+  }
+
+  function goLeft (){
+    left = left - 20;
+    snake.style.left = left + "px";
+
+  }
+
+  function goUp (){
+        top = top - 10;
+    snake.style.top = top + "px";
+
+  }
+
+  function goDown (){
+        top = top + 10;
+    snake.style.top = top + "px";
+
+  }
+
+  // while(direct==1){left = left + 10 ;
+  //       snake.style.left = left + "px";}
+  // while(direct==2){left = left - 10 ;
+  //       snake.style.left = left + "px";}
+  // while(direct==3){up = up + 10;
+  //       snake.style.top = up + "px";}
+  // while(direct==4){up = up - 10;
+  //       snake.style.top = up + "px";}
+
     document.addEventListener("keydown", function(event){
       if (event.keyCode == 68 ){
-       left = left + 10 ;
-        snake.style.left = left + "px"
+       direct=1
+        for (let i = 0; i < 100; i++) {
+  if(direct==1){goRight};
+}
+        
+      }
+
+
+
+      if (event.keyCode == 65 ){
+       direct=2
+       setInterval(goLeft,250)
     }
+
+
+    if (event.keyCode == 83 ){
+      
+       direct=3
+     
+      }
+      if (event.keyCode == 87 ){
+      
+        direct=4
+
+    
+    }
+    
+    
     })
 
   </script>
-  <script type="text/javascript">
-      var snake = document.getElementById("snake");
-    var right = 0;
-    snake.style.right = right;
-      document.addEventListener("keydown", function(event){
-        if (event.keyCode == 65 ){
-          right = right + 10 ;
-          snake.style.right = right + "px"
-
-    }
-    })
-  </script>
-
+  
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	/*#box{
+		width: 500px;
+		height: 500px;
+		background-color: red;
+		opacity: 1;
+	}*/
+</style>
+</head>
+<body>
+<!-- <div id=box></div> -->
+<script type="text/javascript">
+var score = 0
+
+
+	function makeBox (){
+		var box = document.createElement("div");
+		document.body.appendChild(box)
+		box.style.width = "50px";
+		box.style.height = "50px"
+		box.style.backgroundColor = "blue";
+		box.style.display = "inline-block"
+
+		box.addEventListener("click", function(){
+	score=score+1
+	console.log(score)
+	box.style.opacity="0"
+})
+
+	}
+
+
+
+setInterval(makeBox, 1000)
+
+</script>
+</body>
+</html>

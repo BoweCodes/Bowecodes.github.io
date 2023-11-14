@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#dog{
+		width: 1500px;
+		height: 1000px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url(https://www.lucypetproducts.com/wp-content/uploads/2020/01/Golden4.jpg.webp;);
+		position: absolute;
+
+
+	}
+	#scary{
+		width: 0px;
+		height: 1000px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf64d0f2-d177-48ae-92d1-3368efb9b58f/d9exhk9-c8a0ddc0-f345-46f4-8aa2-c49955961845.jpg/v1/fill/w_1024,h_696,q_75,strp/scary_drawing_illusion___halloween_2015_by_lethalchris_d9exhk9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njk2IiwicGF0aCI6IlwvZlwvY2Y2NGQwZjItZDE3Ny00OGFlLTkyZDEtMzM2OGVmYjliNThmXC9kOWV4aGs5LWM4YTBkZGMwLWYzNDUtNDZmNC04YWEyLWM0OTk1NTk2MTg0NS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.QGW475mGqP9bXhinE-3hIs22iDbWMONyB1a-uSJpwgY);
+		position: absolute;
+		top: 0px;
+
+
+	}
+</style>
+</head>
+<body>
+<audio id="sound" src="sound.mp3"></audio>
+<div id=dog></div>
+<div id=scary></div>
+
+
+<script type="text/javascript">
+document.addEventListener("click", function(){
+	sound.play()
+	dog.style.width="0px";
+	scary.style.width="1500px";
+
+})
+
+</script>
+</body>
+</html>
