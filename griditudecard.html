@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#appa{
+		width: 500px;
+		height: 500px;
+		background-repeat: no-repeat;
+		
+		background-size:contain;
+		position: absolute;
+		left: 535px;
+		top: 150px;
+
+	}
+</style>
+</head>
+<body>
+<center>
+<h1>click for pictures of appa</h1>
+
+</center>
+<div id=appa></div>
+<script type="text/javascript">
+
+	var x = Math.floor((Math.random() * 32) + 1);
+	appa.style.backgroundImage= "url(./appaImages/" + x +".jpeg)";
+	document.addEventListener("click", function(){
+	var x = Math.floor((Math.random() * 32) + 1);
+	appa.style.backgroundImage= "url(./appaImages/" + x +".jpeg)";
+}
+
+	)
+</script>
+</body>
+</html>
