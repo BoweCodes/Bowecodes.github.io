@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#qqq{
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			
+		}
+		.hjgjh{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: blue;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id=qqq></div>
+<script type="text/javascript">
+	var snake = document.getElementById("qqq");
+	function makeDiv(){
+		var x = document.createElement("div")
+		x.classList.add("hjgjh")
+		document.body.appendChild(x)
+		x.style.left=event.clientX-25+"px"
+		x.style.top=event.clientY-25+"px"
+		}
+	
+snake.addEventListener("mousedown", function(){
+	
+	makeDiv()
+	x.style.left=clientX
+	x.style.top=clientY
+	
+
+
+})
+</script>
+</body>
+</html>

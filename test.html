@@ -23,7 +23,7 @@
   <div id="snake"></div>
 
   <script type="text/javascript">
-  
+  var var1 =0
   var direct=1    
   var snake = document.getElementById("snake");
   
@@ -63,12 +63,12 @@
   // while(direct==4){up = up - 10;
   //       snake.style.top = up + "px";}
 
-    document.addEventListener("keydown", function(event){
+    while(var1==0){
+     
       if (event.keyCode == 68 ){
        direct=1
-        for (let i = 0; i < 100; i++) {
-  if(direct==1){goRight};
-}
+     
+
         
       }
 
@@ -76,7 +76,7 @@
 
       if (event.keyCode == 65 ){
        direct=2
-       setInterval(goLeft,250)
+       
     }
 
 
@@ -91,9 +91,19 @@
 
     
     }
-    
-    
-    })
+    if(direct==1){
+      goRight()
+    }
+    if(direct==2){
+      goLeft()
+    }
+    if(direct==3){
+      goUp()
+    }
+    if(direct==4){
+      goDown()
+    }
+    }
 
   </script>
   

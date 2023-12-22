@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.hjgjh{
+			width: 50px;
+			height: 50px;
+			background-color: blue;
+			display: inline-block;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	function makeDiv(){
+		var x = document.createElement("div")
+		x.classList.add("hjgjh")
+		document.body.appendChild(x)
+		x.addEventListener("click", function(){
+	x.style.backgroundColor="white"
+})
+	}
+	for(y=0;y<1012;y=y+1){
+	makeDiv()
+}
+x.addEventListener("click", function(){
+	x.style.backgroundColor="white"
+})
+</script>
+</body>
+</html>

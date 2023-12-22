@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#santa{
+				width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-image: url(https://as2.ftcdn.net/v2/jpg/00/73/89/99/1000_F_73899950_tr0YIky7OGthORBRqSeaPkIYZg0gf1jO.jpg);
+			background-size: contain;
+		background-repeat: no-repeat;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		#grinch{
+				width: 100px;
+			height: 200px;
+			
+			background-image: url(https://static.wikia.nocookie.net/prabowomuhammad/images/5/52/The_Grinch_Illumination_render.png/revision/latest?cb=20191203133145);
+			background-size: contain;
+		background-repeat: no-repeat;
+			position: absolute;
+			top: 0px;
+			left: 200px;
+		}
+		.qqq{
+				width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-image: url(https://static.wikia.nocookie.net/prabowomuhammad/images/5/52/The_Grinch_Illumination_render.png/revision/latest?cb=20191203133145);
+			background-size: contain;
+		background-repeat: no-repeat;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.hjgjh{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-image: url(https://as2.ftcdn.net/v2/jpg/00/73/89/99/1000_F_73899950_tr0YIky7OGthORBRqSeaPkIYZg0gf1jO.jpg);
+			background-size: contain;
+		background-repeat: no-repeat;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id=santa></div>
+	<div id=grinch></div>
+	
+<script type="text/javascript">
+	var santa = document.getElementById("santa");
+	var grinch = document.getElementById("grinch");
+	function makeSanta(){
+		var x = document.createElement("div")
+		x.classList.add("hjgjh")
+		document.body.appendChild(x)
+		x.style.left=event.clientX-25+"px"
+		x.style.top=event.clientY-25+"px"
+		}
+	function makeGrinch(){
+		var y = document.createElement("div")
+		y.classList.add("qqq")
+		document.body.appendChild(y)
+		y.style.left=event.clientX-25+"px"
+		y.style.top=event.clientY-25+"px"
+		}
+		pick=0
+	santa.addEventListener("click", function(){
+		pick=1
+	})
+	grinch.addEventListener("click", function(){
+		pick=2
+	})
+document.addEventListener("click", function(){
+	if(pick==1){
+	if(event.clientX-25>300 || event.clientY-25>200){
+	makeSanta()
+}
+}
+if(pick==2){
+	if(event.clientX-25>300 || event.clientY-25>200){
+	makeGrinch()
+}	
+}
+	
+
+
+})
+</script>
+</body>
+</html>
