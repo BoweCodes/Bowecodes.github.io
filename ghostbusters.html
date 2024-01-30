@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.ghost{
+		width: 500px;
+		height: 500px;
+		background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO5yMyHIjrtSyChNt1L68Rabbe4Ig8YjteGQ&usqp=CAU);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+</style>	
+</head>
+<body>
+<script type="text/javascript">
+	function makeDiv(){
+		var ghost = document.createElement("div")
+		ghost.classList.add("ghost")
+		document.body.appendChild(ghost)
+		ghost.addEventListener("click", function(){
+	ghost.style.width="0px"
+})
+makeDiv()
+</script>
+</body>
+</html>
