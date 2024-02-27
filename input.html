@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+who has the best eye balls
+<input id="text"></input>
+<button id=button>submit</button>
+
+<div id="answer"></div>
+<script type="text/javascript">
+	button.addEventListener("click", function(){
+		console.log(text.value)
+		if(text.value=="Bowe" || "bowe"){
+		answer.innerText = "you are 100% correct"	
+		} 
+
+		else{
+		answer.innerText = "you are " + Math.round(Math.random()*100) + "% correct"
+	}
+	})
+</script>
+</body>
+</html>

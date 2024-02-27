@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.pacman{
+		width: 284.8px;
+		height: 250px;
+		transform: rotate(-90deg);
+		background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Pac_Man.svg/800px-Pac_Man.svg.png);
+		background-size:contain;
+		background-repeat: no-repeat;
+		display: inline-block;
+	}
+	
+	
+</style>
+</head>
+<body>
+<center><h1>LUKE</h1></center>
+
+
+<script type="text/javascript">
+	counter=0
+	var lukes = ["url(https://i.pinimg.com/originals/84/b3/ce/84b3ce7507455672a697ad9dc6e26816.gif)", "https://images.squarespace-cdn.com/content/v1/58c03977414fb542367abdc0/1503254599702-Y7EMZFYGSJCMQ4YJVJ73/image-asset.gif", "url(https://www.talkbass.com/attachments/italian-gif-gif.4552718/)", "url(https://cdn.vox-cdn.com/uploads/chorus_asset/file/2893114/MurphShrug.0.gif)", "url(https://cdn.dribbble.com/users/4396683/screenshots/11411789/media/1a27f431b471a17873a1f8ab8ee9ee7c.gif)", "url(https://i.pinimg.com/originals/ff/11/5e/ff115e1bcecfe454da4a5b21e4867dd8.gif)", "url(https://cdn.shopify.com/s/files/1/0425/2699/8690/files/https__media.giphy_.com_media_Joeei2xRG0uyc_giphy.gif)", "url(https://i.chzbgr.com/full/7007668480/h1F2A9441/player-avoiding-another-who-eventually-rejects-his-shot-sending-the-ball-the-other-way-of-the-court)", "url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/32918795-ca63-439a-abff-66e9c2b4fa72/ddmsmog-2a898608-31a6-4fae-a148-a2aa2ac59b66.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMyOTE4Nzk1LWNhNjMtNDM5YS1hYmZmLTY2ZTljMmI0ZmE3MlwvZGRtc21vZy0yYTg5ODYwOC0zMWE2LTRmYWUtYTE0OC1hMmFhMmFjNTliNjYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mGnIES7GLxqjuEfSCvcsmIhY0pQGdgXFvsL3Km3EcDo)","url(https://y.yarn.co/b95d2358-7b20-408c-8953-dc7d551a4a0d_text.gif)", "url(https://i.pinimg.com/originals/32/db/ce/32dbceb3ac95292299205ee19ca2262c.gif)"]
+	function makeDiv(){
+		var pacman = document.createElement("div")
+		pacman.classList.add("pacman")
+		document.body.appendChild(pacman)
+		pacman.addEventListener("click", function(){
+	pacman.style.backgroundImage = lukes[counter]
+	pacman.style.transform = "rotate(0deg)"
+	counter = counter+1
+	if(counter==11){
+		counter=0
+	}
+})
+	}
+	for(y=0;y<10;y=y+1){
+	makeDiv()
+}
+</script>
+</body>
+</html>
